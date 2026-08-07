@@ -47,25 +47,20 @@ const mrno1ze = {
 
 I build backend services and the infrastructure around them.
 
-Most of the interesting code here lives in private repositories, so I intentionally don't use public stars or public-repository counters as a headline metric.
+Most of the interesting code here lives in private repositories, so public stars and public-repository counters are deliberately not used as headline metrics.
 
 ### `~/private-signal`
 
 <p align="center">
   <img
-    src="./profile-summary-card-output/tokyonight/1-repos-per-language.svg"
-    width="49%"
-    alt="Repositories per language"
-  />
-  <img
-    src="./profile-summary-card-output/tokyonight/2-most-commit-language.svg"
-    width="49%"
-    alt="Most used languages in commits"
+    src="./assets/private-stats.svg"
+    width="100%"
+    alt="Aggregated private repository statistics"
   />
 </p>
 
 <sub>
-The cards above are generated from my GitHub data by a scheduled Action. Private repository names, commit messages and other repository details are not rendered.
+Snapshot aggregated from private repositories accessible to my GitHub account. Repository names, commit messages and repository-specific details are not exposed.
 </sub>
 
 ### `~/operating-mode`
