@@ -76,6 +76,16 @@ I build backend services and the infrastructure around them. Most of the interes
 Snapshot aggregated from private repositories accessible to my GitHub account. Repository names, commit messages and repository-specific details are not exposed.
 </sub>
 
+### `~/activity-loop`
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="./assets/github-snake.svg" />
+    <img src="./assets/github-snake-dark.svg" alt="Contribution snake" width="100%" />
+  </picture>
+</p>
+
 ### `~/operating-mode`
 
 ```text
