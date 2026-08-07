@@ -26,8 +26,8 @@ jobs:
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            assets/github-snake.svg?palette=github-light&color_snake=#bb9af7&color_dots=#ebedf0,#9aa5ce,#7aa2f7,#bb9af7,#f7768e
-            assets/github-snake-dark.svg?palette=github-dark&color_snake=#bb9af7&color_dots=#16161e,#292e42,#3d59a1,#7aa2f7,#bb9af7
+            assets/github-snake.svg?palette=github-light&color_snake=#ff4fd8&color_dots=#ebedf0,#b4efff,#7dcfff,#bb9af7,#ff4fd8
+            assets/github-snake-dark.svg?palette=github-dark&color_snake=#ff4fd8&color_dots=#16161e,#22304f,#315b9d,#22d3ee,#bb9af7
 
       - name: Commit generated snake
         shell: bash
