@@ -1,0 +1,50 @@
+<svg width="1000" height="86" viewBox="0 0 1000 86" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="signal" x1="40" y1="0" x2="960" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee" stop-opacity="0"/>
+      <stop offset="0.18" stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#bb9af7"/>
+      <stop offset="0.82" stop-color="#ff4fd8"/>
+      <stop offset="1" stop-color="#ff4fd8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-300%" width="160%" height="700%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softGlow" x="-50%" y="-500%" width="200%" height="1100%">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+  </defs>
+
+  <path d="M42 43H958" stroke="#25283a" stroke-width="2"/>
+  <path d="M42 43H958" stroke="url(#signal)" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="44 34" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="0;-156" dur="4.2s" repeatCount="indefinite"/>
+  </path>
+
+  <ellipse cx="90" cy="43" rx="30" ry="5" fill="#22d3ee" opacity="0.14" filter="url(#softGlow)">
+    <animate attributeName="cx" values="70;930;70" dur="7.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0.5;0.15;0.5;0" dur="7.4s" repeatCount="indefinite"/>
+  </ellipse>
+  <circle cx="70" cy="43" r="5" fill="#22d3ee" filter="url(#glow)">
+    <animate attributeName="cx" values="70;930;70" dur="7.4s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#22d3ee;#bb9af7;#ff4fd8;#bb9af7;#22d3ee" dur="7.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <g opacity="0.55">
+    <circle cx="200" cy="43" r="2.5" fill="#22d3ee">
+      <animate attributeName="r" values="2.5;5;2.5" dur="2.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="43" r="2.5" fill="#bb9af7">
+      <animate attributeName="r" values="2.5;5;2.5" dur="3.2s" begin="-1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="3.2s" begin="-1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="43" r="2.5" fill="#ff4fd8">
+      <animate attributeName="r" values="2.5;5;2.5" dur="2.6s" begin="-0.7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" begin="-0.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
