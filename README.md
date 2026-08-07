@@ -37,6 +37,10 @@
   </a>
 </p>
 
+<p align="center">
+  <sub>build quietly · ship reliably · keep the weirdness observable</sub>
+</p>
+
 ---
 
 ### `~/whoami`
@@ -52,15 +56,9 @@ const mrno1ze = {
 };
 ```
 
-I build backend services and the infrastructure around them. Most of the interesting code here lives in private repositories, so public stars and public-repository counters are deliberately not used as headline metrics.
+I build backend services and the infrastructure around them.
 
-### `~/build-matrix`
-
-| Backend | Infrastructure | Edge / Networking |
-| :--- | :--- | :--- |
-| APIs, services, workers | containers, deployments, automation | routing, proxies, DNS, ingress |
-| Go / TypeScript | Docker / Linux / Ansible | Nginx / Cloudflare / networking |
-| boring, predictable runtime | reproducible environments | fewer mysterious packets |
+Most of the interesting code here lives in private repositories, so public stars and public-repository counters are deliberately not used as headline metrics.
 
 ### `~/private-signal`
 
@@ -75,6 +73,14 @@ I build backend services and the infrastructure around them. Most of the interes
 <sub>
 Snapshot aggregated from private repositories accessible to my GitHub account. Repository names, commit messages and repository-specific details are not exposed.
 </sub>
+
+### `~/build-matrix`
+
+| Backend | Infrastructure | Edge / Networking |
+| :--- | :--- | :--- |
+| APIs, services, workers | containers, deployments, automation | routing, proxies, DNS, ingress |
+| Go / TypeScript | Docker / Linux / Ansible | Nginx / Cloudflare / networking |
+| boring, predictable runtime | reproducible environments | less packet sorcery |
 
 ### `~/activity-loop`
 
@@ -131,6 +137,20 @@ can't explain it?  observe it
 works only once?   it doesn't work
 production bug?    now we have documentation
 ```
+
+<details>
+<summary><b>~/classified-notes</b></summary>
+<br>
+
+```text
+[01] DNS is innocent until logs prove otherwise.
+[02] A rollback plan is part of the deploy plan.
+[03] “Temporary” infrastructure has a suspiciously long lifetime.
+[04] If the dashboard is green but users are angry, the dashboard is wrong.
+[05] The best incident is the one automation quietly prevented.
+```
+
+</details>
 
 ---
 
