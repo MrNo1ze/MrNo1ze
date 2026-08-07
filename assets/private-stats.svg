@@ -10,27 +10,27 @@
 
   <style>
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-    .title { fill: #c0caf5; font-size: 27px; font-weight: 700; letter-spacing: .5px; }
+    .title { fill: #c0caf5; font-size: 27px; font-weight: 700; letter-spacing: .4px; }
     .muted { fill: #8389a3; font-size: 15px; }
     .big { fill: #c0caf5; font-size: 46px; font-weight: 750; }
     .label { fill: #a9b1d6; font-size: 15px; }
     .pct { fill: #c0caf5; font-size: 15px; font-weight: 700; }
   </style>
 
-  <text x="44" y="52" class="mono title">PRIVATE SIGNAL</text>
-  <text x="44" y="79" class="mono muted">aggregated snapshot · repository names and details stay private</text>
+  <text x="44" y="52" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
+  <text x="44" y="79" class="mono muted">сводка без раскрытия названий и деталей репозиториев</text>
 
   <rect x="44" y="102" width="416" height="78" rx="16" fill="#1b1c28" stroke="#2b3048"/>
   <text x="66" y="151" class="mono big">12</text>
-  <text x="142" y="137" class="mono label">private repositories</text>
-  <text x="142" y="161" class="mono muted">9 active · 3 archived</text>
+  <text x="142" y="137" class="mono label">приватных репозиториев</text>
+  <text x="142" y="161" class="mono muted">9 активных · 3 в архиве</text>
 
   <rect x="480" y="102" width="476" height="78" rx="16" fill="#1b1c28" stroke="#2b3048"/>
   <text x="504" y="151" class="mono big">9.7 MB</text>
-  <text x="712" y="137" class="mono label">language-classified source</text>
-  <text x="712" y="161" class="mono muted">private repositories only</text>
+  <text x="712" y="137" class="mono label">кода, распознанного по языкам</text>
+  <text x="712" y="161" class="mono muted">только приватные репозитории</text>
 
-  <text x="44" y="215" class="mono label">language mix</text>
+  <text x="44" y="215" class="mono label">распределение по языкам</text>
 
   <clipPath id="barClip"><rect x="44" y="230" width="912" height="18" rx="9"/></clipPath>
   <g clip-path="url(#barClip)">
@@ -70,7 +70,7 @@
   </g>
   <g transform="translate(680 316)">
     <circle cx="6" cy="-5" r="5" fill="#9ece6a"/>
-    <text x="20" y="0" class="mono label">other</text>
-    <text x="85" y="0" class="mono pct">2.3%</text>
+    <text x="20" y="0" class="mono label">прочее</text>
+    <text x="103" y="0" class="mono pct">2.3%</text>
   </g>
 </svg>
