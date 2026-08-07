@@ -30,11 +30,7 @@
   </a>
 </p>
 
-<p align="center">
-  <sub>приватный код • продакшен-системы • автоматизация всего, что повторяется</sub>
-</p>
-
----
+<br>
 
 <p align="center">
   <img
@@ -45,10 +41,12 @@
 </p>
 
 <p align="center">
-  <sub>без раскрытия названий приватных репозиториев и деталей кода</sub>
+  <img
+    src="./assets/neon-signal.svg"
+    width="100%"
+    alt="Неоновый сигнал"
+  />
 </p>
-
-<br>
 
 <p align="center">
   <picture>
@@ -58,11 +56,7 @@
   </picture>
 </p>
 
-<p align="center">
-  <sub>змейка периодически доедает contribution graph</sub>
-</p>
-
----
+<br>
 
 <details>
 <summary><b>Обо мне и стек</b></summary>
@@ -99,7 +93,7 @@ Backend         API · сервисы · воркеры
 <br>
 
 <p align="center">
-  <b>Меньше ручной работы. Меньше магии. Больше предсказуемых систем.</b>
+  <b>Приватный код. Продакшен-системы. Минимум ручной магии.</b>
 </p>
 
 <p align="center">
