@@ -22,6 +22,13 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/PRIVATE--FIRST-1a1b26?style=flat-square&labelColor=1a1b26&color=bb9af7" alt="Private first" />
+  <img src="https://img.shields.io/badge/SELF--HOSTED-1a1b26?style=flat-square&labelColor=1a1b26&color=7dcfff" alt="Self hosted" />
+  <img src="https://img.shields.io/badge/AUTOMATED-1a1b26?style=flat-square&labelColor=1a1b26&color=7aa2f7" alt="Automated" />
+  <img src="https://img.shields.io/badge/OBSERVABLE-1a1b26?style=flat-square&labelColor=1a1b26&color=9ece6a" alt="Observable" />
+</p>
+
+<p align="center">
   <a href="https://skillicons.dev">
     <img
       src="https://skillicons.dev/icons?i=go,ts,docker,postgres,redis,linux,nginx,ansible,git,cloudflare&theme=dark&perline=10"
@@ -45,9 +52,15 @@ const mrno1ze = {
 };
 ```
 
-I build backend services and the infrastructure around them.
+I build backend services and the infrastructure around them. Most of the interesting code here lives in private repositories, so public stars and public-repository counters are deliberately not used as headline metrics.
 
-Most of the interesting code here lives in private repositories, so public stars and public-repository counters are deliberately not used as headline metrics.
+### `~/build-matrix`
+
+| Backend | Infrastructure | Edge / Networking |
+| :--- | :--- | :--- |
+| APIs, services, workers | containers, deployments, automation | routing, proxies, DNS, ingress |
+| Go / TypeScript | Docker / Linux / Ansible | Nginx / Cloudflare / networking |
+| boring, predictable runtime | reproducible environments | fewer mysterious packets |
 
 ### `~/private-signal`
 
@@ -76,6 +89,28 @@ logs        observable
 rollback    available
 coffee      required
 ```
+
+<details>
+<summary><b>~/toolbox --all</b></summary>
+<br>
+
+<p align="center">
+  <img
+    src="https://skillicons.dev/icons?i=go,ts,js,html,css,bash,docker,postgres,redis,linux,nginx,ansible,git,githubactions,cloudflare,vscode&theme=dark&perline=8"
+    alt="Extended toolbox"
+  />
+</p>
+
+```text
+backend      Go · TypeScript · JavaScript
+infra        Docker · Linux · Nginx · Ansible · Shell
+data         PostgreSQL · Redis
+web          HTML · CSS
+workflow     Git · GitHub Actions · VS Code
+edge         Cloudflare · proxies · routing
+```
+
+</details>
 
 ### `~/principles`
 
