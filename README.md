@@ -16,16 +16,9 @@
 
 <p align="center">
   <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2600&pause=900&color=BB9AF7&center=true&vCenter=true&width=760&lines=Go+%2F+TypeScript+%2F+Docker+%2F+Linux;building+private+production+systems;automate+it+%E2%86%92+observe+it+%E2%86%92+make+it+boring"
+    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=17&duration=2800&pause=900&color=BB9AF7&center=true&vCenter=true&width=760&lines=Go+%2F+TypeScript+%2F+Docker+%2F+Linux;private-first+production+systems;automation+%E2%80%A2+networking+%E2%80%A2+self-hosting"
     alt="Typing SVG"
   />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/PRIVATE--FIRST-1a1b26?style=flat-square&labelColor=1a1b26&color=bb9af7" alt="Private first" />
-  <img src="https://img.shields.io/badge/SELF--HOSTED-1a1b26?style=flat-square&labelColor=1a1b26&color=7dcfff" alt="Self hosted" />
-  <img src="https://img.shields.io/badge/AUTOMATED-1a1b26?style=flat-square&labelColor=1a1b26&color=7aa2f7" alt="Automated" />
-  <img src="https://img.shields.io/badge/OBSERVABLE-1a1b26?style=flat-square&labelColor=1a1b26&color=9ece6a" alt="Observable" />
 </p>
 
 <p align="center">
@@ -38,51 +31,24 @@
 </p>
 
 <p align="center">
-  <sub>build quietly · ship reliably · keep the weirdness observable</sub>
+  <sub>приватный код • продакшен-системы • автоматизация всего, что повторяется</sub>
 </p>
 
 ---
-
-### `~/whoami`
-
-```ts
-const mrno1ze = {
-  domain: ["backend", "devops", "infrastructure"],
-  main: ["Go", "TypeScript"],
-  runtime: ["Docker", "Linux", "Nginx"],
-  data: ["PostgreSQL", "Redis"],
-  interests: ["automation", "networking", "observability", "self-hosting"],
-  visibility: "mostly private 🔒",
-};
-```
-
-I build backend services and the infrastructure around them.
-
-Most of the interesting code here lives in private repositories, so public stars and public-repository counters are deliberately not used as headline metrics.
-
-### `~/private-signal`
 
 <p align="center">
   <img
     src="./assets/private-stats.svg"
     width="100%"
-    alt="Aggregated private repository statistics"
+    alt="Агрегированная статистика приватных репозиториев"
   />
 </p>
 
-<sub>
-Snapshot aggregated from private repositories accessible to my GitHub account. Repository names, commit messages and repository-specific details are not exposed.
-</sub>
+<p align="center">
+  <sub>Агрегированная статистика без раскрытия названий приватных репозиториев и деталей кода.</sub>
+</p>
 
-### `~/build-matrix`
-
-| Backend | Infrastructure | Edge / Networking |
-| :--- | :--- | :--- |
-| APIs, services, workers | containers, deployments, automation | routing, proxies, DNS, ingress |
-| Go / TypeScript | Docker / Linux / Ansible | Nginx / Cloudflare / networking |
-| boring, predictable runtime | reproducible environments | less packet sorcery |
-
-### `~/activity-loop`
+<br>
 
 <p align="center">
   <picture>
@@ -92,23 +58,25 @@ Snapshot aggregated from private repositories accessible to my GitHub account. R
   </picture>
 </p>
 
-### `~/operating-mode`
+<p align="center">
+  <sub>snake живёт своей жизнью и периодически доедает contribution graph</sub>
+</p>
 
-```text
-$ cat /etc/mrno1ze
-
-code        private-first
-infra       automated
-deploy      reproducible
-network     suspicious until proven innocent
-logs        observable
-rollback    available
-coffee      required
-```
+---
 
 <details>
-<summary><b>~/toolbox --all</b></summary>
+<summary><b>Обо мне и стек</b></summary>
 <br>
+
+```text
+Основное        Go · TypeScript
+Backend         API · сервисы · воркеры
+Инфраструктура  Docker · Linux · Nginx · Ansible
+Данные          PostgreSQL · Redis
+Сеть            DNS · routing · proxies · Cloudflare
+Интересы        автоматизация · observability · self-hosting
+Репозитории     в основном приватные
+```
 
 <p align="center">
   <img
@@ -118,51 +86,27 @@ coffee      required
 </p>
 
 ```text
-backend      Go · TypeScript · JavaScript
-infra        Docker · Linux · Nginx · Ansible · Shell
-data         PostgreSQL · Redis
-web          HTML · CSS
-workflow     Git · GitHub Actions · VS Code
-edge         Cloudflare · proxies · routing
+если делаю второй раз   → автоматизирую
+если деплой хрупкий     → чиню процесс
+если непонятно          → добавляю наблюдаемость
+если откат невозможен   → деплой ещё не готов
+если всё зелёное,
+а пользователи злятся   → мониторинг врёт
 ```
 
 </details>
 
-### `~/principles`
-
-```bash
-manual twice?      automate it
-fragile deploy?    containerize it
-can't explain it?  observe it
-works only once?   it doesn't work
-production bug?    now we have documentation
-```
-
-<details>
-<summary><b>~/classified-notes</b></summary>
 <br>
 
-```text
-[01] DNS is innocent until logs prove otherwise.
-[02] A rollback plan is part of the deploy plan.
-[03] “Temporary” infrastructure has a suspiciously long lifetime.
-[04] If the dashboard is green but users are angry, the dashboard is wrong.
-[05] The best incident is the one automation quietly prevented.
-```
-
-</details>
-
----
-
 <p align="center">
-  <sub>private repos • production systems • questionable sleep schedule</sub>
+  <b>Меньше ручной работы. Меньше магии. Больше предсказуемых систем.</b>
 </p>
 
 <p align="center">
   <sub>
-    Header artwork:
+    Иллюстрация в шапке:
     <a href="https://www.artstation.com/yuzuriha_moon">yuzuriha_moon</a>
     •
-    <a href="https://hdqwalls.com/anime-cyber-girl-neon-city-wallpaper">source</a>
+    <a href="https://hdqwalls.com/anime-cyber-girl-neon-city-wallpaper">источник</a>
   </sub>
 </p>
