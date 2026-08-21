@@ -1,11 +1,9 @@
 <p align="center">
-  <a href="https://hdqwalls.com/anime-cyber-girl-neon-city-wallpaper">
-    <img
-      src="https://images.hdqwalls.com/wallpapers/anime-cyber-girl-neon-city-cr.jpg"
-      width="100%"
-      alt="Anime Cyber Girl Neon City"
-    />
-  </a>
+  <img
+    src="./assets/header.gif"
+    width="100%"
+    alt="Шапка профиля"
+  />
 </p>
 
 <h1 align="center">MrNo1ze</h1>
@@ -94,13 +92,4 @@ Backend         API · сервисы · воркеры
 
 <p align="center">
   <b>Приватный код. Продакшен-системы. Минимум ручной магии.</b>
-</p>
-
-<p align="center">
-  <sub>
-    Иллюстрация в шапке:
-    <a href="https://www.artstation.com/yuzuriha_moon">yuzuriha_moon</a>
-    •
-    <a href="https://hdqwalls.com/anime-cyber-girl-neon-city-wallpaper">источник</a>
-  </sub>
 </p>

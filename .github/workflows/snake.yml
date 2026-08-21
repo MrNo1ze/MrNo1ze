@@ -32,6 +32,21 @@ jobs:
       - name: Commit generated snake
         shell: bash
         run: |
+          # Platane/snk скрейпит граф активности без токена и иногда получает
+          # пустой/частичный ответ — тогда змейка вырождается в одну точку.
+          # Такой результат не коммитим: остаётся прошлый SVG, следующий cron перегенерит.
+          cells() { { grep -o 'class="c c' "$1" || true; } | wc -l | tr -d ' '; }
+
+          new=$(cells assets/github-snake-dark.svg)
+          prev=$(git show HEAD:assets/github-snake-dark.svg 2>/dev/null | { grep -o 'class="c c' || true; } | wc -l | tr -d ' ')
+          echo "Активных клеток: было $prev, стало $new"
+
+          if [ "$prev" -gt 0 ] && [ "$((new * 2))" -lt "$prev" ]; then
+            echo "::warning::Граф активности отдался пустым ($new клеток против $prev) — оставляем предыдущую змейку"
+            git checkout -- assets/github-snake.svg assets/github-snake-dark.svg
+            exit 0
+          fi
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/github-snake.svg assets/github-snake-dark.svg

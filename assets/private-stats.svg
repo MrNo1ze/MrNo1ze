@@ -1,76 +1,83 @@
-<svg width="1000" height="350" viewBox="0 0 1000 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="660" height="364" viewBox="0 0 660 364" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Агрегированная статистика приватных репозиториев">
   <defs>
-    <linearGradient id="panelGlow" x1="40" y1="20" x2="960" y2="330">
+    <linearGradient id="panelGlow" x1="0" y1="0" x2="660" y2="364" gradientUnits="userSpaceOnUse">
       <stop stop-color="#1f2030"/>
       <stop offset="1" stop-color="#171823"/>
     </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="0.5" stop-color="#bb9af7"/>
+      <stop offset="1" stop-color="#ff4fd8"/>
+    </linearGradient>
+    <clipPath id="barClip"><rect x="26" y="252" width="608" height="16" rx="8"/></clipPath>
   </defs>
 
-  <rect x="1" y="1" width="998" height="348" rx="22" fill="url(#panelGlow)" stroke="#32364f" stroke-width="2"/>
-
   <style>
-    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
-    .title { fill: #c0caf5; font-size: 27px; font-weight: 700; letter-spacing: .4px; }
-    .muted { fill: #8389a3; font-size: 15px; }
-    .big { fill: #c0caf5; font-size: 46px; font-weight: 750; }
-    .label { fill: #a9b1d6; font-size: 15px; }
-    .pct { fill: #c0caf5; font-size: 15px; font-weight: 700; }
+    .mono  { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; }
+    .title { fill: #c0caf5; font-size: 26px; font-weight: 700; letter-spacing: 1.4px; }
+    .lead  { fill: #c0caf5; font-size: 44px; font-weight: 750; }
+    .label { fill: #a9b1d6; font-size: 16px; }
+    .muted { fill: #8389a3; font-size: 13.5px; }
+    .pct   { fill: #c0caf5; font-size: 15px; font-weight: 700; }
+    .leg   { fill: #a9b1d6; font-size: 15px; }
   </style>
 
-  <text x="44" y="52" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
-  <text x="44" y="79" class="mono muted">сводка без раскрытия названий и деталей репозиториев</text>
+  <rect x="1" y="1" width="658" height="362" rx="20" fill="url(#panelGlow)" stroke="#32364f" stroke-width="2"/>
+  <rect x="26" y="16" width="72" height="4" rx="2" fill="url(#accent)"/>
 
-  <rect x="44" y="102" width="416" height="78" rx="16" fill="#1b1c28" stroke="#2b3048"/>
-  <text x="66" y="151" class="mono big">12</text>
-  <text x="142" y="137" class="mono label">приватных репозиториев</text>
-  <text x="142" y="161" class="mono muted">9 активных · 3 в архиве</text>
+  <text x="26" y="48" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
+  <text x="26" y="74" class="mono muted" style="font-size:14px">сводка без раскрытия названий и деталей репозиториев</text>
 
-  <rect x="480" y="102" width="476" height="78" rx="16" fill="#1b1c28" stroke="#2b3048"/>
-  <text x="504" y="151" class="mono big">9.7 MB</text>
-  <text x="712" y="137" class="mono label">кода, распознанного по языкам</text>
-  <text x="712" y="161" class="mono muted">только приватные репозитории</text>
+  <rect x="26" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
+  <text x="44" y="144" class="mono lead">12</text>
+  <text x="44" y="174" class="mono label">приватных репозиториев</text>
+  <text x="44" y="195" class="mono muted">9 активных · 3 в архиве</text>
 
-  <text x="44" y="215" class="mono label">распределение по языкам</text>
+  <rect x="338" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
+  <text x="356" y="144" class="mono lead">9.7 MB</text>
+  <text x="356" y="174" class="mono label">кода распознано по языкам</text>
+  <text x="356" y="195" class="mono muted">только приватные репозитории</text>
 
-  <clipPath id="barClip"><rect x="44" y="230" width="912" height="18" rx="9"/></clipPath>
+  <text x="26" y="238" class="mono label">распределение по языкам</text>
+
   <g clip-path="url(#barClip)">
-    <rect x="44" y="230" width="464" height="18" fill="#7dcfff"/>
-    <rect x="508" y="230" width="185" height="18" fill="#7aa2f7"/>
-    <rect x="693" y="230" width="101" height="18" fill="#e0af68"/>
-    <rect x="794" y="230" width="96" height="18" fill="#ff9e64"/>
-    <rect x="890" y="230" width="45" height="18" fill="#bb9af7"/>
-    <rect x="935" y="230" width="21" height="18" fill="#9ece6a"/>
+    <rect x="26"    y="252" width="608" height="16" fill="#7dcfff"/>
+    <rect x="335.5" y="252" width="299"  height="16" fill="#7aa2f7"/>
+    <rect x="458.9" y="252" width="176"  height="16" fill="#e0af68"/>
+    <rect x="526.4" y="252" width="108"  height="16" fill="#ff9e64"/>
+    <rect x="590.2" y="252" width="44"   height="16" fill="#bb9af7"/>
+    <rect x="620"   y="252" width="14"   height="16" fill="#9ece6a"/>
   </g>
 
-  <g transform="translate(44 278)">
-    <circle cx="6" cy="-5" r="5" fill="#7dcfff"/>
-    <text x="20" y="0" class="mono label">Go</text>
-    <text x="85" y="0" class="mono pct">50.9%</text>
+  <g transform="translate(26 302)">
+    <circle cx="5" cy="-5" r="5" fill="#7dcfff"/>
+    <text x="20" y="0" class="mono leg">Go</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">50.9%</text>
   </g>
-  <g transform="translate(340 278)">
-    <circle cx="6" cy="-5" r="5" fill="#7aa2f7"/>
-    <text x="20" y="0" class="mono label">TypeScript</text>
-    <text x="132" y="0" class="mono pct">20.3%</text>
+  <g transform="translate(229 302)">
+    <circle cx="5" cy="-5" r="5" fill="#7aa2f7"/>
+    <text x="20" y="0" class="mono leg">TypeScript</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">20.3%</text>
   </g>
-  <g transform="translate(680 278)">
-    <circle cx="6" cy="-5" r="5" fill="#e0af68"/>
-    <text x="20" y="0" class="mono label">JavaScript</text>
-    <text x="132" y="0" class="mono pct">11.1%</text>
+  <g transform="translate(432 302)">
+    <circle cx="5" cy="-5" r="5" fill="#e0af68"/>
+    <text x="20" y="0" class="mono leg">JavaScript</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">11.1%</text>
   </g>
 
-  <g transform="translate(44 316)">
-    <circle cx="6" cy="-5" r="5" fill="#ff9e64"/>
-    <text x="20" y="0" class="mono label">HTML</text>
-    <text x="85" y="0" class="mono pct">10.5%</text>
+  <g transform="translate(26 336)">
+    <circle cx="5" cy="-5" r="5" fill="#ff9e64"/>
+    <text x="20" y="0" class="mono leg">HTML</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">10.5%</text>
   </g>
-  <g transform="translate(340 316)">
-    <circle cx="6" cy="-5" r="5" fill="#bb9af7"/>
-    <text x="20" y="0" class="mono label">CSS</text>
-    <text x="85" y="0" class="mono pct">4.9%</text>
+  <g transform="translate(229 336)">
+    <circle cx="5" cy="-5" r="5" fill="#bb9af7"/>
+    <text x="20" y="0" class="mono leg">CSS</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">4.9%</text>
   </g>
-  <g transform="translate(680 316)">
-    <circle cx="6" cy="-5" r="5" fill="#9ece6a"/>
-    <text x="20" y="0" class="mono label">прочее</text>
-    <text x="103" y="0" class="mono pct">2.3%</text>
+  <g transform="translate(432 336)">
+    <circle cx="5" cy="-5" r="5" fill="#9ece6a"/>
+    <text x="20" y="0" class="mono leg">прочее</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">2.3%</text>
   </g>
 </svg>
