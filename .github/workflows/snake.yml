@@ -25,9 +25,13 @@ jobs:
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
+          # Шкала должна монотонно расти по яркости и начинаться заметно выше
+          # цвета пустой клетки: две трети активных дней — это уровень 1, и на
+          # прежней палитре он давал контраст 1.37:1, то есть был не виден.
+          # Верх шкалы держим непохожим на розовую змейку, чтобы не сливались.
           outputs: |
-            assets/github-snake.svg?palette=github-light&color_snake=#ff4fd8&color_dots=#ebedf0,#b4efff,#7dcfff,#bb9af7,#ff4fd8
-            assets/github-snake-dark.svg?palette=github-dark&color_snake=#ff4fd8&color_dots=#16161e,#22304f,#315b9d,#22d3ee,#bb9af7
+            assets/github-snake.svg?palette=github-light&color_snake=#ff4fd8&color_dots=#ebedf0,#7dcfff,#33a8e0,#6d5cd6,#3b2a8c
+            assets/github-snake-dark.svg?palette=github-dark&color_snake=#ff4fd8&color_dots=#16161e,#2b5f7a,#3f9fc4,#22d3ee,#a8f0ff
 
       - name: Commit generated snake
         shell: bash
