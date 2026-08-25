@@ -1,0 +1,45 @@
+name: Private stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # STATS_TOKEN — классический PAT со scope `repo` (только чтение по факту).
+      # Встроенный GITHUB_TOKEN видит лишь текущий репозиторий и остальные
+      # приватные репы не перечислит, поэтому нужен отдельный секрет.
+      - name: Build stats card
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+        run: |
+          if [ -z "$STATS_TOKEN" ]; then
+            echo "::warning::Секрет STATS_TOKEN не задан — карточка не обновлена"
+            exit 0
+          fi
+          python3 scripts/build_private_stats.py
+
+      - name: Commit stats card
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/private-stats.svg
+
+          if git diff --cached --quiet; then
+            echo "Статистика не изменилась."
+            exit 0
+          fi
+
+          git commit -m "chore: refresh private stats"
+          git push

@@ -18,6 +18,7 @@
     .lead  { fill: #c0caf5; font-size: 44px; font-weight: 750; }
     .label { fill: #a9b1d6; font-size: 16px; }
     .muted { fill: #8389a3; font-size: 13.5px; }
+    .stamp { fill: #6b7089; font-size: 12.5px; }
     .pct   { fill: #c0caf5; font-size: 15px; font-weight: 700; }
     .leg   { fill: #a9b1d6; font-size: 15px; }
   </style>
@@ -26,58 +27,58 @@
   <rect x="26" y="16" width="72" height="4" rx="2" fill="url(#accent)"/>
 
   <text x="26" y="48" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
+  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 25.08.2026</text>
   <text x="26" y="74" class="mono muted" style="font-size:14px">сводка без раскрытия названий и деталей репозиториев</text>
 
   <rect x="26" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
-  <text x="44" y="144" class="mono lead">12</text>
+  <text x="44" y="144" class="mono lead">10</text>
   <text x="44" y="174" class="mono label">приватных репозиториев</text>
-  <text x="44" y="195" class="mono muted">9 активных · 3 в архиве</text>
+  <text x="44" y="195" class="mono muted">7 активных · 3 в архиве</text>
 
   <rect x="338" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
-  <text x="356" y="144" class="mono lead">9.7 MB</text>
+  <text x="356" y="144" class="mono lead">10.7 MB</text>
   <text x="356" y="174" class="mono label">кода распознано по языкам</text>
   <text x="356" y="195" class="mono muted">только приватные репозитории</text>
 
   <text x="26" y="238" class="mono label">распределение по языкам</text>
 
   <g clip-path="url(#barClip)">
-    <rect x="26"    y="252" width="608" height="16" fill="#7dcfff"/>
-    <rect x="335.5" y="252" width="299"  height="16" fill="#7aa2f7"/>
-    <rect x="458.9" y="252" width="176"  height="16" fill="#e0af68"/>
-    <rect x="526.4" y="252" width="108"  height="16" fill="#ff9e64"/>
-    <rect x="590.2" y="252" width="44"   height="16" fill="#bb9af7"/>
-    <rect x="620"   y="252" width="14"   height="16" fill="#9ece6a"/>
+    <rect x="26.0" y="252" width="608.0" height="16" fill="#7dcfff"/>
+    <rect x="372.6" y="252" width="261.4" height="16" fill="#7aa2f7"/>
+    <rect x="480.2" y="252" width="153.8" height="16" fill="#e0af68"/>
+    <rect x="539.8" y="252" width="94.2" height="16" fill="#ff9e64"/>
+    <rect x="595.1" y="252" width="38.9" height="16" fill="#bb9af7"/>
+    <rect x="620.6" y="252" width="13.4" height="16" fill="#9ece6a"/>
   </g>
 
   <g transform="translate(26 302)">
     <circle cx="5" cy="-5" r="5" fill="#7dcfff"/>
     <text x="20" y="0" class="mono leg">Go</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">50.9%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">57.0%</text>
   </g>
   <g transform="translate(229 302)">
     <circle cx="5" cy="-5" r="5" fill="#7aa2f7"/>
     <text x="20" y="0" class="mono leg">TypeScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">20.3%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">17.7%</text>
   </g>
   <g transform="translate(432 302)">
     <circle cx="5" cy="-5" r="5" fill="#e0af68"/>
     <text x="20" y="0" class="mono leg">JavaScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">11.1%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">9.8%</text>
   </g>
-
   <g transform="translate(26 336)">
     <circle cx="5" cy="-5" r="5" fill="#ff9e64"/>
     <text x="20" y="0" class="mono leg">HTML</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">10.5%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">9.1%</text>
   </g>
   <g transform="translate(229 336)">
     <circle cx="5" cy="-5" r="5" fill="#bb9af7"/>
     <text x="20" y="0" class="mono leg">CSS</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">4.9%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">4.2%</text>
   </g>
   <g transform="translate(432 336)">
     <circle cx="5" cy="-5" r="5" fill="#9ece6a"/>
     <text x="20" y="0" class="mono leg">прочее</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">2.3%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">2.2%</text>
   </g>
 </svg>
