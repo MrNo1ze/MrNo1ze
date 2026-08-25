@@ -16,9 +16,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      # STATS_TOKEN — классический PAT со scope `repo` (только чтение по факту).
-      # Встроенный GITHUB_TOKEN видит лишь текущий репозиторий и остальные
-      # приватные репы не перечислит, поэтому нужен отдельный секрет.
+      # STATS_TOKEN — личный токен: fine-grained с Metadata: Read-only на все
+      # репозитории либо классический со scope `repo`. Встроенный GITHUB_TOKEN
+      # видит лишь текущий репозиторий и остальные приватные не перечислит.
       - name: Build stats card
         env:
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
