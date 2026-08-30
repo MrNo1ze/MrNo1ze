@@ -27,13 +27,13 @@
   <rect x="26" y="16" width="72" height="4" rx="2" fill="url(#accent)"/>
 
   <text x="26" y="48" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
-  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 29.08.2026</text>
+  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 30.08.2026</text>
   <text x="26" y="74" class="mono muted" style="font-size:14px">сводка без раскрытия названий и деталей репозиториев</text>
 
   <rect x="26" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
   <text x="44" y="144" class="mono lead">10</text>
   <text x="44" y="174" class="mono label">приватных репозиториев</text>
-  <text x="44" y="195" class="mono muted">7 активных · 3 в архиве</text>
+  <text x="44" y="195" class="mono muted">6 активных · 4 в архиве</text>
 
   <rect x="338" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
   <text x="356" y="144" class="mono lead">10.9 MB</text>
@@ -44,9 +44,9 @@
 
   <g clip-path="url(#barClip)">
     <rect x="26.0" y="252" width="608.0" height="16" fill="#7dcfff"/>
-    <rect x="370.1" y="252" width="263.9" height="16" fill="#7aa2f7"/>
-    <rect x="479.0" y="252" width="155.0" height="16" fill="#e0af68"/>
-    <rect x="539.2" y="252" width="94.8" height="16" fill="#ff9e64"/>
+    <rect x="371.3" y="252" width="262.7" height="16" fill="#7aa2f7"/>
+    <rect x="479.6" y="252" width="154.4" height="16" fill="#e0af68"/>
+    <rect x="539.8" y="252" width="94.2" height="16" fill="#ff9e64"/>
     <rect x="593.9" y="252" width="40.1" height="16" fill="#bb9af7"/>
     <rect x="620.0" y="252" width="14.0" height="16" fill="#9ece6a"/>
   </g>
@@ -54,12 +54,12 @@
   <g transform="translate(26 302)">
     <circle cx="5" cy="-5" r="5" fill="#7dcfff"/>
     <text x="20" y="0" class="mono leg">Go</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">56.6%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">56.8%</text>
   </g>
   <g transform="translate(229 302)">
     <circle cx="5" cy="-5" r="5" fill="#7aa2f7"/>
     <text x="20" y="0" class="mono leg">TypeScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">17.9%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">17.8%</text>
   </g>
   <g transform="translate(432 302)">
     <circle cx="5" cy="-5" r="5" fill="#e0af68"/>
@@ -69,7 +69,7 @@
   <g transform="translate(26 336)">
     <circle cx="5" cy="-5" r="5" fill="#ff9e64"/>
     <text x="20" y="0" class="mono leg">HTML</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">9.0%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">8.9%</text>
   </g>
   <g transform="translate(229 336)">
     <circle cx="5" cy="-5" r="5" fill="#bb9af7"/>
