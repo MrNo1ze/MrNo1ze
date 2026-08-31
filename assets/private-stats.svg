@@ -27,7 +27,7 @@
   <rect x="26" y="16" width="72" height="4" rx="2" fill="url(#accent)"/>
 
   <text x="26" y="48" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
-  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 30.08.2026</text>
+  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 31.08.2026</text>
   <text x="26" y="74" class="mono muted" style="font-size:14px">сводка без раскрытия названий и деталей репозиториев</text>
 
   <rect x="26" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
