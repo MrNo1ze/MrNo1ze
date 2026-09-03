@@ -27,16 +27,16 @@
   <rect x="26" y="16" width="72" height="4" rx="2" fill="url(#accent)"/>
 
   <text x="26" y="48" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
-  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 02.09.2026</text>
+  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 03.09.2026</text>
   <text x="26" y="74" class="mono muted" style="font-size:14px">сводка без раскрытия названий и деталей репозиториев</text>
 
   <rect x="26" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
-  <text x="44" y="144" class="mono lead">10</text>
+  <text x="44" y="144" class="mono lead">11</text>
   <text x="44" y="174" class="mono label">приватных репозиториев</text>
-  <text x="44" y="195" class="mono muted">6 активных · 4 в архиве</text>
+  <text x="44" y="195" class="mono muted">7 активных · 4 в архиве</text>
 
   <rect x="338" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
-  <text x="356" y="144" class="mono lead">10.9 MB</text>
+  <text x="356" y="144" class="mono lead">15.9 MB</text>
   <text x="356" y="174" class="mono label">кода распознано по языкам</text>
   <text x="356" y="195" class="mono muted">только приватные репозитории</text>
 
@@ -44,41 +44,41 @@
 
   <g clip-path="url(#barClip)">
     <rect x="26.0" y="252" width="608.0" height="16" fill="#7dcfff"/>
-    <rect x="371.3" y="252" width="262.7" height="16" fill="#7aa2f7"/>
-    <rect x="479.6" y="252" width="154.4" height="16" fill="#e0af68"/>
-    <rect x="539.8" y="252" width="94.2" height="16" fill="#ff9e64"/>
-    <rect x="593.9" y="252" width="40.1" height="16" fill="#bb9af7"/>
-    <rect x="620.0" y="252" width="14.0" height="16" fill="#9ece6a"/>
+    <rect x="259.5" y="252" width="374.5" height="16" fill="#a9b1d6"/>
+    <rect x="418.8" y="252" width="215.2" height="16" fill="#7aa2f7"/>
+    <rect x="493.6" y="252" width="140.4" height="16" fill="#e0af68"/>
+    <rect x="534.9" y="252" width="99.1" height="16" fill="#ff9e64"/>
+    <rect x="572.0" y="252" width="62.0" height="16" fill="#9ece6a"/>
   </g>
 
   <g transform="translate(26 302)">
     <circle cx="5" cy="-5" r="5" fill="#7dcfff"/>
     <text x="20" y="0" class="mono leg">Go</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">56.8%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">38.4%</text>
   </g>
   <g transform="translate(229 302)">
-    <circle cx="5" cy="-5" r="5" fill="#7aa2f7"/>
-    <text x="20" y="0" class="mono leg">TypeScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">17.8%</text>
+    <circle cx="5" cy="-5" r="5" fill="#a9b1d6"/>
+    <text x="20" y="0" class="mono leg">C</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">26.2%</text>
   </g>
   <g transform="translate(432 302)">
-    <circle cx="5" cy="-5" r="5" fill="#e0af68"/>
-    <text x="20" y="0" class="mono leg">JavaScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">9.9%</text>
+    <circle cx="5" cy="-5" r="5" fill="#7aa2f7"/>
+    <text x="20" y="0" class="mono leg">TypeScript</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">12.3%</text>
   </g>
   <g transform="translate(26 336)">
-    <circle cx="5" cy="-5" r="5" fill="#ff9e64"/>
-    <text x="20" y="0" class="mono leg">HTML</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">8.9%</text>
+    <circle cx="5" cy="-5" r="5" fill="#e0af68"/>
+    <text x="20" y="0" class="mono leg">JavaScript</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">6.8%</text>
   </g>
   <g transform="translate(229 336)">
-    <circle cx="5" cy="-5" r="5" fill="#bb9af7"/>
-    <text x="20" y="0" class="mono leg">CSS</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">4.3%</text>
+    <circle cx="5" cy="-5" r="5" fill="#ff9e64"/>
+    <text x="20" y="0" class="mono leg">HTML</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">6.1%</text>
   </g>
   <g transform="translate(432 336)">
     <circle cx="5" cy="-5" r="5" fill="#9ece6a"/>
     <text x="20" y="0" class="mono leg">прочее</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">2.3%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">10.2%</text>
   </g>
 </svg>
