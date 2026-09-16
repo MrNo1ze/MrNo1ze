@@ -27,7 +27,7 @@
   <rect x="26" y="16" width="72" height="4" rx="2" fill="url(#accent)"/>
 
   <text x="26" y="48" class="mono title">ПРИВАТНАЯ АКТИВНОСТЬ</text>
-  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 15.09.2026</text>
+  <text x="634" y="48" class="mono stamp" text-anchor="end">обновлено 16.09.2026</text>
   <text x="26" y="74" class="mono muted" style="font-size:14px">сводка без раскрытия названий и деталей репозиториев</text>
 
   <rect x="26" y="92" width="296" height="116" rx="16" fill="#1b1c28" stroke="#2b3048"/>
@@ -44,8 +44,8 @@
 
   <g clip-path="url(#barClip)">
     <rect x="26.0" y="252" width="608.0" height="16" fill="#7dcfff"/>
-    <rect x="371.3" y="252" width="262.7" height="16" fill="#7aa2f7"/>
-    <rect x="465.6" y="252" width="168.4" height="16" fill="#e0af68"/>
+    <rect x="372.6" y="252" width="261.4" height="16" fill="#7aa2f7"/>
+    <rect x="466.2" y="252" width="167.8" height="16" fill="#e0af68"/>
     <rect x="517.3" y="252" width="116.7" height="16" fill="#ff9e64"/>
     <rect x="563.5" y="252" width="70.5" height="16" fill="#bb9af7"/>
     <rect x="589.6" y="252" width="44.4" height="16" fill="#9ece6a"/>
@@ -54,17 +54,17 @@
   <g transform="translate(26 302)">
     <circle cx="5" cy="-5" r="5" fill="#7dcfff"/>
     <text x="20" y="0" class="mono leg">Go</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">56.8%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">57.0%</text>
   </g>
   <g transform="translate(229 302)">
     <circle cx="5" cy="-5" r="5" fill="#7aa2f7"/>
     <text x="20" y="0" class="mono leg">TypeScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">15.5%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">15.4%</text>
   </g>
   <g transform="translate(432 302)">
     <circle cx="5" cy="-5" r="5" fill="#e0af68"/>
     <text x="20" y="0" class="mono leg">JavaScript</text>
-    <text x="188" y="0" class="mono pct" text-anchor="end">8.5%</text>
+    <text x="188" y="0" class="mono pct" text-anchor="end">8.4%</text>
   </g>
   <g transform="translate(26 336)">
     <circle cx="5" cy="-5" r="5" fill="#ff9e64"/>
