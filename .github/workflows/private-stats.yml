@@ -4,17 +4,47 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "17 3 * * *"
+  push:
+    branches: [main]
+    paths:
+      - scripts/build_private_stats.py
+      - scripts/test_build_private_stats.py
+      - .github/workflows/private-stats.yml
+  pull_request:
+    paths:
+      - scripts/build_private_stats.py
+      - scripts/test_build_private_stats.py
+      - .github/workflows/private-stats.yml
 
 permissions:
-  contents: write
+  contents: read
+
+concurrency:
+  group: private-stats
+  cancel-in-progress: false
 
 jobs:
-  build:
+  check:
     runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check collector and renderer
+        run: python3 scripts/build_private_stats.py --self-check
+
+  build:
+    needs: check
+    if: github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
 
       # STATS_TOKEN — личный токен: fine-grained с Metadata: Read-only на все
       # репозитории либо классический со scope `repo`. Встроенный GITHUB_TOKEN
@@ -22,19 +52,22 @@ jobs:
       - name: Build stats card
         env:
           STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GITHUB_REPOSITORY_OWNER: ${{ github.repository_owner }}
         run: |
           if [ -z "$STATS_TOKEN" ]; then
-            echo "::warning::Секрет STATS_TOKEN не задан — карточка не обновлена"
-            exit 0
+            echo "::error::Секрет STATS_TOKEN не задан — карточка не обновлена"
+            exit 1
           fi
           python3 scripts/build_private_stats.py
 
       - name: Commit stats card
         shell: bash
+        env:
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/private-stats.svg
+          git add assets/private-stats.svg assets/private-stats.json README.md
 
           if git diff --cached --quiet; then
             echo "Статистика не изменилась."
@@ -42,4 +75,7 @@ jobs:
           fi
 
           git commit -m "chore: refresh private stats"
-          git push
+          # Snake тоже пишет в main; сохраняем его коммит при одновременном запуске.
+          git pull --rebase origin "$DEFAULT_BRANCH"
+          git push origin "HEAD:$DEFAULT_BRANCH"
+          echo "Опубликованы SVG, JSON и новая версия ссылки в README." >> "$GITHUB_STEP_SUMMARY"

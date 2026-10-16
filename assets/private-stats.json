@@ -1,0 +1,91 @@
+{
+  "generated_at": "2026-10-16T22:40:05+00:00",
+  "total": 11,
+  "archived": 5,
+  "forks": 0,
+  "pushed_30d": 5,
+  "without_languages": 0,
+  "coverage_verified": true,
+  "languages": {
+    "Go": {
+      "bytes": 8609664,
+      "repositories": 6
+    },
+    "TypeScript": {
+      "bytes": 2278209,
+      "repositories": 4
+    },
+    "JavaScript": {
+      "bytes": 1806680,
+      "repositories": 7
+    },
+    "HTML": {
+      "bytes": 1137345,
+      "repositories": 7
+    },
+    "Dart": {
+      "bytes": 807600,
+      "repositories": 1
+    },
+    "CSS": {
+      "bytes": 452926,
+      "repositories": 5
+    },
+    "Shell": {
+      "bytes": 212514,
+      "repositories": 7
+    },
+    "C++": {
+      "bytes": 74661,
+      "repositories": 1
+    },
+    "PLpgSQL": {
+      "bytes": 71044,
+      "repositories": 1
+    },
+    "Jinja": {
+      "bytes": 53767,
+      "repositories": 1
+    },
+    "Swift": {
+      "bytes": 53569,
+      "repositories": 1
+    },
+    "Kotlin": {
+      "bytes": 51409,
+      "repositories": 1
+    },
+    "Dockerfile": {
+      "bytes": 39390,
+      "repositories": 8
+    },
+    "Python": {
+      "bytes": 25724,
+      "repositories": 2
+    },
+    "CMake": {
+      "bytes": 22829,
+      "repositories": 1
+    },
+    "Inno Setup": {
+      "bytes": 8314,
+      "repositories": 1
+    },
+    "Ruby": {
+      "bytes": 7030,
+      "repositories": 1
+    },
+    "C": {
+      "bytes": 3069,
+      "repositories": 1
+    },
+    "Makefile": {
+      "bytes": 1386,
+      "repositories": 2
+    },
+    "Objective-C": {
+      "bytes": 38,
+      "repositories": 1
+    }
+  }
+}

@@ -32,10 +32,15 @@
 
 <p align="center">
   <img
-    src="./assets/private-stats.svg"
+    src="./assets/private-stats.svg?v=3b2565bc1d81ad67"
     width="100%"
-    alt="Агрегированная статистика приватных репозиториев"
+    alt="Приватные репозитории: языки, объём кода и push за 30 дней"
   />
+</p>
+
+<p align="center">
+  <a href="./assets/private-stats.json">Точные данные</a> ·
+  <a href="./scripts/README.md">Как считается</a>
 </p>
 
 <p align="center">
