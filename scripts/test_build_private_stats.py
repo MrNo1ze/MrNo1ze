@@ -121,7 +121,7 @@ class RenderTests(unittest.TestCase):
         self.assertIn('textLength="270"', svg)
 
     def test_empty_and_many_languages_fit_dynamic_canvas(self):
-        for count in (0, 1, 2, 40):
+        for count, segment_count in ((0, 0), (1, 1), (2, 2), (40, 1)):
             fixture = copy.deepcopy(FIXTURE)
             fixture["languages"] = {f"Language {i}": {"bytes": i + 1, "repositories": 1} for i in range(count)}
             svg = stats.render(fixture)
@@ -133,10 +133,35 @@ class RenderTests(unittest.TestCase):
                     y = int(transform.removeprefix("translate(").removesuffix(")").split()[1])
                     self.assertLess(y + 43, height)
             segments = root.findall("{*}g[@clip-path]/{*}rect")
-            self.assertEqual(len(segments), count)
+            self.assertEqual(len(segments), segment_count)
             if segments:
                 last = segments[-1].attrib
                 self.assertAlmostEqual(float(last["x"]) + float(last["width"]), 812, places=3)
+
+    def test_bar_labels_separators_and_grouped_tail_keep_real_proportions(self):
+        fixture = copy.deepcopy(FIXTURE)
+        fixture["languages"] = {name: {"bytes": size, "repositories": 1} for name, size in
+                                (("Go", 55), ("TypeScript", 15), ("JavaScript", 10),
+                                 ("HTML", 8), ("Dart", 5), ("CSS", 4), ("Shell", 3))}
+        root = ET.fromstring(stats.render(fixture))
+        segments = root.findall("{*}g[@clip-path]/{*}rect")
+        self.assertEqual(len(segments), 6)
+        self.assertAlmostEqual(float(segments[-1].attrib["width"]), 784 * 0.07)
+        self.assertEqual(segments[-1].find("{*}title").text, "Ещё 2 · 7.00%")
+        for segment in segments:
+            self.assertEqual(segment.attrib["stroke-width"], "2")
+        labels = [text.text for text in root.findall('{*}text[@class="bar-label"]')]
+        self.assertIn("Go", labels)
+        self.assertIn("55.00%", labels)
+        self.assertIn("Ещё 2", labels)
+        self.assertNotEqual(stats.language_color("JavaScript"), stats.language_color("HTML"))
+
+    def test_tiny_tail_is_not_enlarged_and_gets_external_label(self):
+        root = ET.fromstring(stats.render(FIXTURE))
+        tail = root.findall("{*}g[@clip-path]/{*}rect")[-1]
+        self.assertLess(float(tail.attrib["width"]), 1)
+        texts = [text.text for text in root.findall('{*}text[@class="muted"]')]
+        self.assertIn("Ещё 14 · <0.01%", texts)
 
     def test_binary_units(self):
         for size, label in ((0, "0 B"), (1023, "1023 B"), (1024, "1.00 KiB"),

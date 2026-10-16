@@ -47,7 +47,7 @@ class Stats(TypedDict):
 
 LANG_COLORS = {
     "Go": "#7dcfff", "TypeScript": "#7aa2f7", "JavaScript": "#e0af68",
-    "HTML": "#ff9e64", "Dart": "#bb9af7", "CSS": "#9d7cd8",
+    "HTML": "#f7768e", "Dart": "#bb9af7", "CSS": "#9d7cd8",
     "Python": "#9ece6a", "Shell": "#89ddff", "Rust": "#f7768e",
     "Dockerfile": "#41a6b5", "Makefile": "#c0caf5", "SQL": "#73daca",
     "Vue": "#4fd6be", "Svelte": "#ff757f", "PHP": "#a78bfa",
@@ -160,11 +160,15 @@ def language_color(name: str) -> str:
     return LANG_COLORS.get(name, FALLBACK[int(hashlib.sha256(name.encode()).hexdigest()[:4], 16) % len(FALLBACK)])
 
 
+def percentage(ratio: float) -> str:
+    return f"{ratio * 100:.2f}%" if ratio >= 0.0001 else "<0.01%"
+
+
 def render(stats: Stats) -> str:
     languages = sorted(stats["languages"].items(), key=lambda item: (-item[1]["bytes"], item[0]))
     total_bytes = sum(language["bytes"] for _, language in languages)
     per_column = max(1, (len(languages) + 1) // 2)
-    footer_y = 286 + per_column * 52
+    footer_y = 326 + per_column * 52
     height = footer_y + 64
     updated = datetime.fromisoformat(stats["generated_at"]).astimezone(ZoneInfo("Europe/Moscow"))
     metrics = (
@@ -182,16 +186,34 @@ def render(stats: Stats) -> str:
     <text x="16" y="84" class="muted">{detail}</text>
   </g>''')
 
-    segments, entries, cursor = [], [], 0
+    # В общей полосе доли <5% объединены: их подписи не помещаются в масштабе.
+    major = [(name, language["bytes"], language_color(name)) for name, language in languages
+             if language["bytes"] / total_bytes >= 0.05]
+    small = [language["bytes"] for _, language in languages if language["bytes"] / total_bytes < 0.05]
+    if small:
+        major.append((f"Ещё {len(small)}", sum(small), "#b4bed5"))
+    segments, bar_labels, cursor = [], [], 0
+    for name, size, color in major:
+        x, width = 28 + 784 * cursor / total_bytes, 784 * size / total_bytes
+        percent = escape(percentage(size / total_bytes))
+        segments.append(f'    <rect x="{x:.4f}" y="224" width="{width:.4f}" height="40" fill="{color}" stroke="#131720" stroke-width="2"><title>{escape(name)} · {percent}</title></rect>')
+        if width >= 38:
+            fit = f' textLength="{width - 8:.2f}" lengthAdjust="spacingAndGlyphs"' if len(name) * 6 > width - 8 else ""
+            bar_labels.append(f'  <text x="{x + width / 2:.4f}" y="240" text-anchor="middle" class="bar-label"{fit}>{escape(name)}</text>')
+            bar_labels.append(f'  <text x="{x + width / 2:.4f}" y="255" text-anchor="middle" class="bar-label">{percent}</text>')
+        else:
+            bar_labels.append(f'  <path d="M{x + width / 2:.4f} 264V271H812" stroke="{color}"/>')
+            bar_labels.append(f'  <text x="812" y="286" text-anchor="end" class="muted">{escape(name)} · {percent}</text>')
+        cursor += size
+
+    entries = []
     for i, (name, language) in enumerate(languages):
         size, count = language["bytes"], language["repositories"]
         ratio = size / total_bytes
         color = language_color(name)
-        x, y = 28 + (i // per_column) * 408, 280 + (i % per_column) * 52
-        percent = f"{ratio * 100:.2f}%" if ratio >= 0.0001 else "&lt;0.01%"
+        x, y = 28 + (i // per_column) * 408, 320 + (i % per_column) * 52
+        percent = escape(percentage(ratio))
         text_fit = ' textLength="270" lengthAdjust="spacingAndGlyphs"' if len(name) > 25 else ""
-        segments.append(f'    <rect x="{28 + 784 * cursor / total_bytes:.4f}" y="224" width="{784 * ratio:.4f}" height="10" fill="{color}"><title>{escape(name)} · {percent}</title></rect>')
-        cursor += size
         entries.append(f'''  <g transform="translate({x} {y})">
     <title>{escape(name)}: {size:,} B; репозиториев: {count}</title>
     <circle cx="5" cy="10" r="4" fill="{color}"/>
@@ -202,7 +224,7 @@ def render(stats: Stats) -> str:
     <rect x="18" y="43" width="{358 * ratio:.4f}" height="2" rx="1" fill="{color}"/>
   </g>''')
     if not languages:
-        entries.append('  <text x="28" y="304" class="language">GitHub не вернул языковую статистику</text>')
+        entries.append('  <text x="28" y="344" class="language">GitHub не вернул языковую статистику</text>')
 
     coverage = "Все приватные репозитории владельца" if stats["coverage_verified"] else "Приватные репозитории, доступные токену"
     scope = "Архивы включены"
@@ -216,7 +238,7 @@ def render(stats: Stats) -> str:
   <defs>
     <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#1b1e2d"/><stop offset="1" stop-color="#131720"/></linearGradient>
     <linearGradient id="accent"><stop stop-color="#7dcfff"/><stop offset="1" stop-color="#bb9af7"/></linearGradient>
-    <clipPath id="bar"><rect x="28" y="224" width="784" height="10" rx="5"/></clipPath>
+    <clipPath id="bar"><rect x="28" y="224" width="784" height="40" rx="8"/></clipPath>
   </defs>
   <style>
     text {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }}
@@ -227,6 +249,7 @@ def render(stats: Stats) -> str:
     .percent {{ fill: #d2daf4; font-size: 16px; font-weight: 600; font-variant-numeric: tabular-nums; }}
     .muted {{ fill: #a5aecb; font-size: 12px; }}
     .activity {{ fill: #c4cce7; font-size: 13px; }}
+    .bar-label {{ fill: #131720; font-size: 10.5px; font-weight: 650; font-variant-numeric: tabular-nums; }}
   </style>
   <rect x="1" y="1" width="838" height="{height - 2}" rx="18" fill="url(#panel)" stroke="#343c54"/>
   <rect x="28" y="22" width="40" height="3" rx="1.5" fill="url(#accent)"/>
@@ -241,10 +264,11 @@ def render(stats: Stats) -> str:
   <g clip-path="url(#bar)">
 {chr(10).join(segments)}
   </g>
-  <text x="28" y="264" class="eyebrow">ЯЗЫК / ОБЪЁМ / РЕПО</text>
-  <text x="404" y="264" class="eyebrow" text-anchor="end">ДОЛЯ</text>
-  <text x="436" y="264" class="eyebrow">ЯЗЫК / ОБЪЁМ / РЕПО</text>
-  <text x="812" y="264" class="eyebrow" text-anchor="end">ДОЛЯ</text>
+{chr(10).join(bar_labels)}
+  <text x="28" y="304" class="eyebrow">ЯЗЫК / ОБЪЁМ / РЕПО</text>
+  <text x="404" y="304" class="eyebrow" text-anchor="end">ДОЛЯ</text>
+  <text x="436" y="304" class="eyebrow">ЯЗЫК / ОБЪЁМ / РЕПО</text>
+  <text x="812" y="304" class="eyebrow" text-anchor="end">ДОЛЯ</text>
 {chr(10).join(entries)}
   <path d="M28 {footer_y}H812" stroke="#30374e"/>
   <text x="28" y="{footer_y + 25}" class="muted">{coverage} · основные ветки</text>
