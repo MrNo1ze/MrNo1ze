@@ -1,6 +1,6 @@
 <svg width="840" height="870" viewBox="0 0 840 870" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
   <title id="title">Приватные репозитории · 11 репо · 20 языков</title>
-  <desc id="description">Срез GitHub Linguist по байтам. Архивы включены. Репозиториев с push за 30 дней: 5. Расчёт 17.10.2026 01:40:05 МСК. Названия репозиториев не публикуются.</desc>
+  <desc id="description">Срез GitHub Linguist по байтам. Архивы включены. Репозиториев с push за 30 дней: 5. Расчёт 17.10.2026 01:44:50 МСК. Названия репозиториев не публикуются.</desc>
   <defs>
     <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#1b1e2d"/><stop offset="1" stop-color="#131720"/></linearGradient>
     <linearGradient id="accent"><stop stop-color="#7dcfff"/><stop offset="1" stop-color="#bb9af7"/></linearGradient>
@@ -21,7 +21,7 @@
   <text x="78" y="27" class="eyebrow">GITHUB / MRNO1ZE</text>
   <text x="28" y="60" class="heading">Приватные репозитории</text>
   <text x="812" y="27" text-anchor="end" class="muted">Расчёт · 17.10.2026</text>
-  <text x="812" y="55" text-anchor="end" class="activity">01:40:05 МСК</text>
+  <text x="812" y="55" text-anchor="end" class="activity">01:44:50 МСК</text>
   <g transform="translate(28 84)">
     <rect width="256" height="100" rx="12" fill="#1c2030" stroke="#30374e"/>
     <text x="16" y="24" class="eyebrow">РЕПОЗИТОРИИ</text>
@@ -250,6 +250,6 @@
     <rect x="18" y="43" width="0.0009" height="2" rx="1" fill="#e0af68"/>
   </g>
   <path d="M28 806H812" stroke="#30374e"/>
-  <text x="28" y="831" class="muted">Все приватные репозитории владельца · основные ветки</text>
+  <text x="28" y="831" class="muted">Приватные репозитории, доступные токену · основные ветки</text>
   <text x="28" y="853" class="muted">Объём кода по Linguist, не личный вклад. Доли округлены. KiB / MiB — единицы по 1024.</text>
 </svg>
