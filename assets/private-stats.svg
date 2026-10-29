@@ -1,6 +1,6 @@
 <svg width="840" height="962" viewBox="0 0 840 962" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
   <title id="title">Приватные репозитории · 12 репо · 22 языков</title>
-  <desc id="description">Срез GitHub Linguist по байтам. Архивы включены. Репозиториев с push за 30 дней: 6. Расчёт 28.10.2026 12:40:43 МСК. Названия репозиториев не публикуются.</desc>
+  <desc id="description">Срез GitHub Linguist по байтам. Архивы включены. Репозиториев с push за 30 дней: 6. Расчёт 29.10.2026 12:58:51 МСК. Названия репозиториев не публикуются.</desc>
   <defs>
     <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#1b1e2d"/><stop offset="1" stop-color="#131720"/></linearGradient>
     <linearGradient id="accent"><stop stop-color="#7dcfff"/><stop offset="1" stop-color="#bb9af7"/></linearGradient>
@@ -21,8 +21,8 @@
   <rect x="28" y="22" width="40" height="3" rx="1.5" fill="url(#accent)"/>
   <text x="78" y="27" class="eyebrow">GITHUB / MRNO1ZE</text>
   <text x="28" y="60" class="heading">Приватные репозитории</text>
-  <text x="812" y="27" text-anchor="end" class="muted">Расчёт · 28.10.2026</text>
-  <text x="812" y="55" text-anchor="end" class="activity">12:40:43 МСК</text>
+  <text x="812" y="27" text-anchor="end" class="muted">Расчёт · 29.10.2026</text>
+  <text x="812" y="55" text-anchor="end" class="activity">12:58:51 МСК</text>
   <g transform="translate(28 84)">
     <rect width="256" height="100" rx="12" fill="#1c2030" stroke="#30374e"/>
     <text x="16" y="24" class="eyebrow">РЕПОЗИТОРИИ</text>
