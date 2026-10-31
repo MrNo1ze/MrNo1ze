@@ -1,6 +1,6 @@
 <svg width="840" height="962" viewBox="0 0 840 962" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title description">
   <title id="title">Приватные репозитории · 13 репо · 22 языков</title>
-  <desc id="description">Срез GitHub Linguist по байтам. Архивы включены. Репозиториев с push за 30 дней: 7. Расчёт 30.10.2026 13:01:42 МСК. Названия репозиториев не публикуются.</desc>
+  <desc id="description">Срез GitHub Linguist по байтам. Архивы включены. Репозиториев с push за 30 дней: 7. Расчёт 31.10.2026 12:39:55 МСК. Названия репозиториев не публикуются.</desc>
   <defs>
     <linearGradient id="panel" x2="1" y2="1"><stop stop-color="#1b1e2d"/><stop offset="1" stop-color="#131720"/></linearGradient>
     <linearGradient id="accent"><stop stop-color="#7dcfff"/><stop offset="1" stop-color="#bb9af7"/></linearGradient>
@@ -21,8 +21,8 @@
   <rect x="28" y="22" width="40" height="3" rx="1.5" fill="url(#accent)"/>
   <text x="78" y="27" class="eyebrow">GITHUB / MRNO1ZE</text>
   <text x="28" y="60" class="heading">Приватные репозитории</text>
-  <text x="812" y="27" text-anchor="end" class="muted">Расчёт · 30.10.2026</text>
-  <text x="812" y="55" text-anchor="end" class="activity">13:01:42 МСК</text>
+  <text x="812" y="27" text-anchor="end" class="muted">Расчёт · 31.10.2026</text>
+  <text x="812" y="55" text-anchor="end" class="activity">12:39:55 МСК</text>
   <g transform="translate(28 84)">
     <rect width="256" height="100" rx="12" fill="#1c2030" stroke="#30374e"/>
     <text x="16" y="24" class="eyebrow">РЕПОЗИТОРИИ</text>
@@ -32,8 +32,8 @@
   <g transform="translate(292 84)">
     <rect width="256" height="100" rx="12" fill="#1c2030" stroke="#30374e"/>
     <text x="16" y="24" class="eyebrow">ОБЪЁМ КОДА</text>
-    <text x="16" y="61" class="value">18.09 MiB</text>
-    <text x="16" y="84" class="muted">18 965 702 байт</text>
+    <text x="16" y="61" class="value">18.35 MiB</text>
+    <text x="16" y="84" class="muted">19 242 865 байт</text>
   </g>
   <g transform="translate(556 84)">
     <rect width="256" height="100" rx="12" fill="#1c2030" stroke="#30374e"/>
@@ -45,25 +45,25 @@
   <text x="46" y="210" class="activity">Репо с push за 30 дней: 7 / 13</text>
   <text x="812" y="210" class="muted" text-anchor="end">Архивы включены</text>
   <g clip-path="url(#bar)">
-    <rect x="28.0000" y="224" width="372.5505" height="40" fill="#7dcfff" stroke="#131720" stroke-width="2"><title>Go · 47.52%</title></rect>
-    <rect x="400.5505" y="224" width="100.9966" height="40" fill="#7aa2f7" stroke="#131720" stroke-width="2"><title>TypeScript · 12.88%</title></rect>
-    <rect x="501.5471" y="224" width="92.8282" height="40" fill="#9ece6a" stroke="#131720" stroke-width="2"><title>Python · 11.84%</title></rect>
-    <rect x="594.3753" y="224" width="80.4465" height="40" fill="#e0af68" stroke="#131720" stroke-width="2"><title>JavaScript · 10.26%</title></rect>
-    <rect x="674.8219" y="224" width="56.1467" height="40" fill="#f7768e" stroke="#131720" stroke-width="2"><title>HTML · 7.16%</title></rect>
-    <rect x="730.9686" y="224" width="81.0314" height="40" fill="#b4bed5" stroke="#131720" stroke-width="2"><title>Ещё 17 · 10.34%</title></rect>
+    <rect x="28.0000" y="224" width="367.1845" height="40" fill="#7dcfff" stroke="#131720" stroke-width="2"><title>Go · 46.83%</title></rect>
+    <rect x="395.1845" y="224" width="102.7130" height="40" fill="#9ece6a" stroke="#131720" stroke-width="2"><title>Python · 13.10%</title></rect>
+    <rect x="497.8974" y="224" width="99.5419" height="40" fill="#7aa2f7" stroke="#131720" stroke-width="2"><title>TypeScript · 12.70%</title></rect>
+    <rect x="597.4394" y="224" width="79.2878" height="40" fill="#e0af68" stroke="#131720" stroke-width="2"><title>JavaScript · 10.11%</title></rect>
+    <rect x="676.7272" y="224" width="55.3380" height="40" fill="#f7768e" stroke="#131720" stroke-width="2"><title>HTML · 7.06%</title></rect>
+    <rect x="732.0652" y="224" width="79.9348" height="40" fill="#b4bed5" stroke="#131720" stroke-width="2"><title>Ещё 17 · 10.20%</title></rect>
   </g>
-  <text x="214.2752" y="240" text-anchor="middle" class="bar-label">Go</text>
-  <text x="214.2752" y="255" text-anchor="middle" class="bar-label">47.52%</text>
-  <text x="451.0488" y="240" text-anchor="middle" class="bar-label">TypeScript</text>
-  <text x="451.0488" y="255" text-anchor="middle" class="bar-label">12.88%</text>
-  <text x="547.9612" y="240" text-anchor="middle" class="bar-label">Python</text>
-  <text x="547.9612" y="255" text-anchor="middle" class="bar-label">11.84%</text>
-  <text x="634.5986" y="240" text-anchor="middle" class="bar-label">JavaScript</text>
-  <text x="634.5986" y="255" text-anchor="middle" class="bar-label">10.26%</text>
-  <text x="702.8952" y="240" text-anchor="middle" class="bar-label">HTML</text>
-  <text x="702.8952" y="255" text-anchor="middle" class="bar-label">7.16%</text>
-  <text x="771.4843" y="240" text-anchor="middle" class="bar-label">Ещё 17</text>
-  <text x="771.4843" y="255" text-anchor="middle" class="bar-label">10.34%</text>
+  <text x="211.5922" y="240" text-anchor="middle" class="bar-label">Go</text>
+  <text x="211.5922" y="255" text-anchor="middle" class="bar-label">46.83%</text>
+  <text x="446.5409" y="240" text-anchor="middle" class="bar-label">Python</text>
+  <text x="446.5409" y="255" text-anchor="middle" class="bar-label">13.10%</text>
+  <text x="547.6684" y="240" text-anchor="middle" class="bar-label">TypeScript</text>
+  <text x="547.6684" y="255" text-anchor="middle" class="bar-label">12.70%</text>
+  <text x="637.0833" y="240" text-anchor="middle" class="bar-label">JavaScript</text>
+  <text x="637.0833" y="255" text-anchor="middle" class="bar-label">10.11%</text>
+  <text x="704.3962" y="240" text-anchor="middle" class="bar-label">HTML</text>
+  <text x="704.3962" y="255" text-anchor="middle" class="bar-label">7.06%</text>
+  <text x="772.0326" y="240" text-anchor="middle" class="bar-label">Ещё 17</text>
+  <text x="772.0326" y="255" text-anchor="middle" class="bar-label">10.20%</text>
   <text x="28" y="304" class="eyebrow">ЯЗЫК / ОБЪЁМ / РЕПО</text>
   <text x="404" y="304" class="eyebrow" text-anchor="end">ДОЛЯ</text>
   <text x="436" y="304" class="eyebrow">ЯЗЫК / ОБЪЁМ / РЕПО</text>
@@ -72,73 +72,73 @@
     <title>Go: 9,012,348 B; репозиториев: 6</title>
     <circle cx="5" cy="10" r="4" fill="#7dcfff"/>
     <text x="18" y="15" class="language">Go</text>
-    <text x="376" y="15" class="percent" text-anchor="end">47.52%</text>
+    <text x="376" y="15" class="percent" text-anchor="end">46.83%</text>
     <text x="18" y="35" class="muted">8.59 MiB · репо: 6</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="170.1187" height="2" rx="1" fill="#7dcfff"/>
+    <rect x="18" y="43" width="167.6684" height="2" rx="1" fill="#7dcfff"/>
   </g>
   <g transform="translate(28 372)">
+    <title>Python: 2,521,036 B; репозиториев: 4</title>
+    <circle cx="5" cy="10" r="4" fill="#9ece6a"/>
+    <text x="18" y="15" class="language">Python</text>
+    <text x="376" y="15" class="percent" text-anchor="end">13.10%</text>
+    <text x="18" y="35" class="muted">2.40 MiB · репо: 4</text>
+    <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
+    <rect x="18" y="43" width="46.9021" height="2" rx="1" fill="#9ece6a"/>
+  </g>
+  <g transform="translate(28 424)">
     <title>TypeScript: 2,443,204 B; репозиториев: 4</title>
     <circle cx="5" cy="10" r="4" fill="#7aa2f7"/>
     <text x="18" y="15" class="language">TypeScript</text>
-    <text x="376" y="15" class="percent" text-anchor="end">12.88%</text>
+    <text x="376" y="15" class="percent" text-anchor="end">12.70%</text>
     <text x="18" y="35" class="muted">2.33 MiB · репо: 4</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="46.1184" height="2" rx="1" fill="#7aa2f7"/>
-  </g>
-  <g transform="translate(28 424)">
-    <title>Python: 2,245,603 B; репозиториев: 4</title>
-    <circle cx="5" cy="10" r="4" fill="#9ece6a"/>
-    <text x="18" y="15" class="language">Python</text>
-    <text x="376" y="15" class="percent" text-anchor="end">11.84%</text>
-    <text x="18" y="35" class="muted">2.14 MiB · репо: 4</text>
-    <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="42.3884" height="2" rx="1" fill="#9ece6a"/>
+    <rect x="18" y="43" width="45.4541" height="2" rx="1" fill="#7aa2f7"/>
   </g>
   <g transform="translate(28 476)">
     <title>JavaScript: 1,946,078 B; репозиториев: 8</title>
     <circle cx="5" cy="10" r="4" fill="#e0af68"/>
     <text x="18" y="15" class="language">JavaScript</text>
-    <text x="376" y="15" class="percent" text-anchor="end">10.26%</text>
+    <text x="376" y="15" class="percent" text-anchor="end">10.11%</text>
     <text x="18" y="35" class="muted">1.86 MiB · репо: 8</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="36.7345" height="2" rx="1" fill="#e0af68"/>
+    <rect x="18" y="43" width="36.2054" height="2" rx="1" fill="#e0af68"/>
   </g>
   <g transform="translate(28 528)">
     <title>HTML: 1,358,242 B; репозиториев: 8</title>
     <circle cx="5" cy="10" r="4" fill="#f7768e"/>
     <text x="18" y="15" class="language">HTML</text>
-    <text x="376" y="15" class="percent" text-anchor="end">7.16%</text>
+    <text x="376" y="15" class="percent" text-anchor="end">7.06%</text>
     <text x="18" y="35" class="muted">1.30 MiB · репо: 8</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="25.6384" height="2" rx="1" fill="#f7768e"/>
+    <rect x="18" y="43" width="25.2691" height="2" rx="1" fill="#f7768e"/>
   </g>
   <g transform="translate(28 580)">
     <title>Dart: 807,600 B; репозиториев: 1</title>
     <circle cx="5" cy="10" r="4" fill="#bb9af7"/>
     <text x="18" y="15" class="language">Dart</text>
-    <text x="376" y="15" class="percent" text-anchor="end">4.26%</text>
+    <text x="376" y="15" class="percent" text-anchor="end">4.20%</text>
     <text x="18" y="35" class="muted">788.67 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="15.2444" height="2" rx="1" fill="#bb9af7"/>
+    <rect x="18" y="43" width="15.0248" height="2" rx="1" fill="#bb9af7"/>
   </g>
   <g transform="translate(28 632)">
     <title>CSS: 465,853 B; репозиториев: 4</title>
     <circle cx="5" cy="10" r="4" fill="#9d7cd8"/>
     <text x="18" y="15" class="language">CSS</text>
-    <text x="376" y="15" class="percent" text-anchor="end">2.46%</text>
+    <text x="376" y="15" class="percent" text-anchor="end">2.42%</text>
     <text x="18" y="35" class="muted">454.93 KiB · репо: 4</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="8.7935" height="2" rx="1" fill="#9d7cd8"/>
+    <rect x="18" y="43" width="8.6669" height="2" rx="1" fill="#9d7cd8"/>
   </g>
   <g transform="translate(28 684)">
-    <title>Shell: 289,728 B; репозиториев: 8</title>
+    <title>Shell: 291,458 B; репозиториев: 8</title>
     <circle cx="5" cy="10" r="4" fill="#89ddff"/>
     <text x="18" y="15" class="language">Shell</text>
-    <text x="376" y="15" class="percent" text-anchor="end">1.53%</text>
-    <text x="18" y="35" class="muted">282.94 KiB · репо: 8</text>
+    <text x="376" y="15" class="percent" text-anchor="end">1.51%</text>
+    <text x="18" y="35" class="muted">284.63 KiB · репо: 8</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="5.4690" height="2" rx="1" fill="#89ddff"/>
+    <rect x="18" y="43" width="5.4224" height="2" rx="1" fill="#89ddff"/>
   </g>
   <g transform="translate(28 736)">
     <title>C++: 74,661 B; репозиториев: 1</title>
@@ -147,7 +147,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.39%</text>
     <text x="18" y="35" class="muted">72.91 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="1.4093" height="2" rx="1" fill="#60a5fa"/>
+    <rect x="18" y="43" width="1.3890" height="2" rx="1" fill="#60a5fa"/>
   </g>
   <g transform="translate(28 788)">
     <title>PLpgSQL: 74,358 B; репозиториев: 1</title>
@@ -156,7 +156,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.39%</text>
     <text x="18" y="35" class="muted">72.62 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="1.4036" height="2" rx="1" fill="#e0af68"/>
+    <rect x="18" y="43" width="1.3834" height="2" rx="1" fill="#e0af68"/>
   </g>
   <g transform="translate(28 840)">
     <title>Jinja: 53,767 B; репозиториев: 1</title>
@@ -165,7 +165,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.28%</text>
     <text x="18" y="35" class="muted">52.51 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="1.0149" height="2" rx="1" fill="#f7768e"/>
+    <rect x="18" y="43" width="1.0003" height="2" rx="1" fill="#f7768e"/>
   </g>
   <g transform="translate(436 320)">
     <title>Swift: 53,569 B; репозиториев: 1</title>
@@ -174,7 +174,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.28%</text>
     <text x="18" y="35" class="muted">52.31 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="1.0112" height="2" rx="1" fill="#fb923c"/>
+    <rect x="18" y="43" width="0.9966" height="2" rx="1" fill="#fb923c"/>
   </g>
   <g transform="translate(436 372)">
     <title>Kotlin: 51,409 B; репозиториев: 1</title>
@@ -183,7 +183,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.27%</text>
     <text x="18" y="35" class="muted">50.20 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.9704" height="2" rx="1" fill="#c084fc"/>
+    <rect x="18" y="43" width="0.9564" height="2" rx="1" fill="#c084fc"/>
   </g>
   <g transform="translate(436 424)">
     <title>Dockerfile: 38,432 B; репозиториев: 9</title>
@@ -192,7 +192,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.20%</text>
     <text x="18" y="35" class="muted">37.53 KiB · репо: 9</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.7254" height="2" rx="1" fill="#41a6b5"/>
+    <rect x="18" y="43" width="0.7150" height="2" rx="1" fill="#41a6b5"/>
   </g>
   <g transform="translate(436 476)">
     <title>CMake: 22,829 B; репозиториев: 1</title>
@@ -201,7 +201,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.12%</text>
     <text x="18" y="35" class="muted">22.29 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.4309" height="2" rx="1" fill="#86efac"/>
+    <rect x="18" y="43" width="0.4247" height="2" rx="1" fill="#86efac"/>
   </g>
   <g transform="translate(436 528)">
     <title>Ruby: 11,160 B; репозиториев: 2</title>
@@ -210,7 +210,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.06%</text>
     <text x="18" y="35" class="muted">10.90 KiB · репо: 2</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.2107" height="2" rx="1" fill="#f43f5e"/>
+    <rect x="18" y="43" width="0.2076" height="2" rx="1" fill="#f43f5e"/>
   </g>
   <g transform="translate(436 580)">
     <title>Inno Setup: 8,314 B; репозиториев: 1</title>
@@ -219,7 +219,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.04%</text>
     <text x="18" y="35" class="muted">8.12 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.1569" height="2" rx="1" fill="#bb9af7"/>
+    <rect x="18" y="43" width="0.1547" height="2" rx="1" fill="#bb9af7"/>
   </g>
   <g transform="translate(436 632)">
     <title>Lua: 3,169 B; репозиториев: 1</title>
@@ -228,7 +228,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.02%</text>
     <text x="18" y="35" class="muted">3.09 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.0598" height="2" rx="1" fill="#f7768e"/>
+    <rect x="18" y="43" width="0.0590" height="2" rx="1" fill="#f7768e"/>
   </g>
   <g transform="translate(436 684)">
     <title>C: 3,069 B; репозиториев: 1</title>
@@ -237,7 +237,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">0.02%</text>
     <text x="18" y="35" class="muted">3.00 KiB · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.0579" height="2" rx="1" fill="#a9b1d6"/>
+    <rect x="18" y="43" width="0.0571" height="2" rx="1" fill="#a9b1d6"/>
   </g>
   <g transform="translate(436 736)">
     <title>Makefile: 1,386 B; репозиториев: 2</title>
@@ -246,7 +246,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">&lt;0.01%</text>
     <text x="18" y="35" class="muted">1.35 KiB · репо: 2</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.0262" height="2" rx="1" fill="#c0caf5"/>
+    <rect x="18" y="43" width="0.0258" height="2" rx="1" fill="#c0caf5"/>
   </g>
   <g transform="translate(436 788)">
     <title>PowerShell: 885 B; репозиториев: 1</title>
@@ -255,7 +255,7 @@
     <text x="376" y="15" class="percent" text-anchor="end">&lt;0.01%</text>
     <text x="18" y="35" class="muted">885 B · репо: 1</text>
     <rect x="18" y="43" width="358" height="2" rx="1" fill="#30374e"/>
-    <rect x="18" y="43" width="0.0167" height="2" rx="1" fill="#e0af68"/>
+    <rect x="18" y="43" width="0.0165" height="2" rx="1" fill="#e0af68"/>
   </g>
   <g transform="translate(436 840)">
     <title>Objective-C: 38 B; репозиториев: 1</title>
