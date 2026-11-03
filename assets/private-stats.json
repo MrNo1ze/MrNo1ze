@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T11:08:55+00:00",
+  "generated_at": "2026-11-03T10:53:29+00:00",
   "total": 13,
   "archived": 5,
   "forks": 0,
@@ -8,36 +8,36 @@
   "coverage_verified": false,
   "languages": {
     "Go": {
-      "bytes": 9012937,
+      "bytes": 9015519,
       "repositories": 6
     },
     "Python": {
-      "bytes": 2735979,
+      "bytes": 4730789,
       "repositories": 5
     },
     "TypeScript": {
-      "bytes": 2443204,
+      "bytes": 2444272,
       "repositories": 4
     },
     "JavaScript": {
-      "bytes": 1946078,
+      "bytes": 1951656,
       "repositories": 8
     },
     "HTML": {
-      "bytes": 1358929,
+      "bytes": 1440225,
       "repositories": 8
     },
     "Dart": {
       "bytes": 807600,
       "repositories": 1
     },
+    "Shell": {
+      "bytes": 477158,
+      "repositories": 9
+    },
     "CSS": {
       "bytes": 465853,
       "repositories": 4
-    },
-    "Shell": {
-      "bytes": 299527,
-      "repositories": 9
     },
     "C++": {
       "bytes": 74661,
@@ -60,7 +60,7 @@
       "repositories": 1
     },
     "Dockerfile": {
-      "bytes": 38432,
+      "bytes": 39453,
       "repositories": 9
     },
     "CMake": {
@@ -68,7 +68,7 @@
       "repositories": 1
     },
     "Ruby": {
-      "bytes": 11160,
+      "bytes": 11331,
       "repositories": 2
     },
     "Inno Setup": {
