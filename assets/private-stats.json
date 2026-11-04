@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T10:53:29+00:00",
+  "generated_at": "2026-11-04T10:56:21+00:00",
   "total": 13,
   "archived": 5,
   "forks": 0,
@@ -8,7 +8,7 @@
   "coverage_verified": false,
   "languages": {
     "Go": {
-      "bytes": 9015519,
+      "bytes": 9374872,
       "repositories": 6
     },
     "Python": {
@@ -16,15 +16,15 @@
       "repositories": 5
     },
     "TypeScript": {
-      "bytes": 2444272,
+      "bytes": 2556787,
       "repositories": 4
     },
     "JavaScript": {
-      "bytes": 1951656,
+      "bytes": 2042986,
       "repositories": 8
     },
     "HTML": {
-      "bytes": 1440225,
+      "bytes": 1422057,
       "repositories": 8
     },
     "Dart": {
@@ -32,19 +32,19 @@
       "repositories": 1
     },
     "Shell": {
-      "bytes": 477158,
+      "bytes": 482814,
       "repositories": 9
     },
     "CSS": {
-      "bytes": 465853,
+      "bytes": 479276,
       "repositories": 4
+    },
+    "PLpgSQL": {
+      "bytes": 77127,
+      "repositories": 1
     },
     "C++": {
       "bytes": 74661,
-      "repositories": 1
-    },
-    "PLpgSQL": {
-      "bytes": 74358,
       "repositories": 1
     },
     "Jinja": {
