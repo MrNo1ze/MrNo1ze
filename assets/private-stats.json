@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T10:23:43+00:00",
+  "generated_at": "2026-11-09T11:33:06+00:00",
   "total": 13,
   "archived": 5,
   "forks": 0,
@@ -8,7 +8,7 @@
   "coverage_verified": false,
   "languages": {
     "Go": {
-      "bytes": 9669510,
+      "bytes": 9673421,
       "repositories": 6
     },
     "Python": {
@@ -16,28 +16,28 @@
       "repositories": 5
     },
     "TypeScript": {
-      "bytes": 2609716,
+      "bytes": 2654144,
       "repositories": 4
     },
     "JavaScript": {
-      "bytes": 2153543,
+      "bytes": 2187185,
       "repositories": 8
     },
     "HTML": {
-      "bytes": 1425674,
+      "bytes": 1426995,
       "repositories": 8
     },
     "Dart": {
       "bytes": 807600,
       "repositories": 1
     },
-    "Shell": {
-      "bytes": 488830,
-      "repositories": 9
-    },
     "CSS": {
-      "bytes": 485917,
+      "bytes": 495339,
       "repositories": 4
+    },
+    "Shell": {
+      "bytes": 486447,
+      "repositories": 9
     },
     "PLpgSQL": {
       "bytes": 81662,
@@ -60,7 +60,7 @@
       "repositories": 1
     },
     "Dockerfile": {
-      "bytes": 39156,
+      "bytes": 41957,
       "repositories": 9
     },
     "CMake": {
