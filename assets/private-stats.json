@@ -1,27 +1,27 @@
 {
-  "generated_at": "2026-11-11T10:58:35+00:00",
-  "total": 13,
+  "generated_at": "2026-11-12T11:12:06+00:00",
+  "total": 14,
   "archived": 5,
   "forks": 0,
-  "pushed_30d": 7,
+  "pushed_30d": 8,
   "without_languages": 0,
   "coverage_verified": false,
   "languages": {
     "Go": {
-      "bytes": 9678783,
+      "bytes": 9827144,
       "repositories": 6
     },
     "Python": {
-      "bytes": 4730789,
-      "repositories": 5
+      "bytes": 4738715,
+      "repositories": 6
     },
     "TypeScript": {
-      "bytes": 2668365,
+      "bytes": 2678722,
       "repositories": 4
     },
     "JavaScript": {
-      "bytes": 2206705,
-      "repositories": 8
+      "bytes": 2224559,
+      "repositories": 9
     },
     "HTML": {
       "bytes": 1427048,
@@ -32,12 +32,12 @@
       "repositories": 1
     },
     "CSS": {
-      "bytes": 549175,
+      "bytes": 550484,
       "repositories": 4
     },
     "Shell": {
-      "bytes": 486447,
-      "repositories": 9
+      "bytes": 513697,
+      "repositories": 10
     },
     "PLpgSQL": {
       "bytes": 81662,
@@ -60,7 +60,7 @@
       "repositories": 1
     },
     "Dockerfile": {
-      "bytes": 41957,
+      "bytes": 43562,
       "repositories": 9
     },
     "CMake": {
@@ -75,6 +75,10 @@
       "bytes": 8314,
       "repositories": 1
     },
+    "Makefile": {
+      "bytes": 3950,
+      "repositories": 3
+    },
     "Lua": {
       "bytes": 3169,
       "repositories": 1
@@ -82,10 +86,6 @@
     "C": {
       "bytes": 3069,
       "repositories": 1
-    },
-    "Makefile": {
-      "bytes": 1386,
-      "repositories": 2
     },
     "PowerShell": {
       "bytes": 885,
