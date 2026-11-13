@@ -32,7 +32,7 @@
 
 <p align="center">
   <img
-    src="./assets/private-stats.svg?v=b1019533dacd7012"
+    src="./assets/private-stats.svg?v=8e7a60fad1ab55d7"
     width="100%"
     alt="Приватные репозитории: языки, объём кода и push за 30 дней"
   />
